@@ -10,8 +10,8 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column(name = "text")
-    private String text;
+    @Column(name = "comment")
+    private String comment;
 
     @Column(name = "createdDate")
     private Date createdDate;
@@ -32,12 +32,12 @@ public class Comment {
         this.id = id;
     }
 
-    public String getText() {
-        return text;
+    public String getComment() {
+        return comment;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public Date getCreatedDate() {
